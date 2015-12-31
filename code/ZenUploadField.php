@@ -8,18 +8,20 @@
  * @package  ZenFields
  */
 
-class ZenUploadField extends Extension {
+class ZenUploadField extends Extension
+{
 
 
 
-	/**
-	 * A shortcut for setting the validator to only allow known image extensions.
-	 * 
-	 * @return   UploadField
-	 */
-	public function imagesOnly() {
-		$this->owner->getValidator()->setAllowedExtensions(array('jpg','jpeg','png','gif'));
+    /**
+     * A shortcut for setting the validator to only allow known image extensions.
+     * 
+     * @return   UploadField
+     */
+    public function imagesOnly()
+    {
+        $this->owner->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
 
-		return $this->owner;
-	}
+        return $this->owner;
+    }
 }
